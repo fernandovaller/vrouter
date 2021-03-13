@@ -1,0 +1,21 @@
+{
+    "name": "fernandovaller/vrouter",
+    "description": "Sistema de routas para php 5.6",
+    "keywords": [
+        "Router",
+        "Route",
+        "Routes"
+    ],
+    "homepage": "https://www.fernandovaller.com",
+    "license": "MIT",
+    "authors": [{
+        "name": "Fernando Valler",
+        "email": "fernandovaller@gmail.com"
+    }],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "FVCode\\VRouter\\": "src"
+        }
+    }
+}
