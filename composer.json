@@ -1,6 +1,6 @@
 {
     "name": "fernandovaller/vrouter",
-    "description": "Sistema de routas para php 5.6",
+    "description": "Sistema de rotas para php 5.6",
     "keywords": [
         "Router",
         "Route",

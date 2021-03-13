@@ -1,6 +1,6 @@
-# Sistema de rotas em simples para PHP 5.6
+# Sistema de rotas simples para PHP 5.6
 
-Esse projeto é baseado em um fork do projeto [https://github.com/robsonvleite/router] mas modificado rodar na versão do PHP 5.6
+Esse projeto é baseado em um fork do projeto [https://github.com/robsonvleite/router] mas modificado para funcionar na versão do PHP 5.6
 
 ## Installation
 
@@ -129,7 +129,7 @@ class Name
         $this->router = $router;
     }
 
-    public function home(): void
+    public function home()
     {
         echo "<h1>Home</h1>";
         echo "<p>", $this->router->route("name.home"), "</p>";
@@ -137,7 +137,7 @@ class Name
         echo "<p>", $this->router->route("name.redirect"), "</p>";
     }
 
-    public function redirect(): void
+    public function redirect()
     {
         $this->router->redirect("name.hello");
     }
