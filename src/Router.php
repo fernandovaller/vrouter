@@ -2,12 +2,6 @@
 
 namespace FVCode\VRouter;
 
-/**
- * Class Router
- *
- * @author Fernando Valler <https://github.com/fernandovaller>
- * @package FVCode\Router
- */
 class Router extends Dispatch
 {
     /**

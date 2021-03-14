@@ -2,12 +2,6 @@
 
 namespace FVCode\VRouter;
 
-/**
- * Class Dispatch
- *
- * @author Fernando Valler <https://github.com/fernandovaller>
- * @package FVCode\Router
- */
 abstract class Dispatch
 {
     use RouterTrait;

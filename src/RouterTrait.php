@@ -2,12 +2,6 @@
 
 namespace FVCode\VRouter;
 
-/**
- * Class RouterTrait
- *
- * @author Fernando Valler <https://github.com/fernandovaller>
- * @package FVCode\Router
- */
 trait RouterTrait
 {
     /** @var array */
