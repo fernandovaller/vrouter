@@ -83,4 +83,21 @@ class Router extends Dispatch
 
         $this->addRoute("GET", "{$route}/{id}/destroy", "{$handler}:destroy", "{$name}.destroy");
     }
+
+    /**
+     * @param array $methods
+     * @param string $route
+     * @param $handler Controller::method
+     * @param string|null $name
+     */
+    public function any($methods, $route, $handler, $name = null)
+    {
+        if (!is_array($methods)) {
+            throw new \Exception("Error method invalid!", 1);
+        }
+
+        foreach ($methods as $method) {
+            $this->addRoute("{$method}", $route, $handler, $name);
+        }
+    }
 }

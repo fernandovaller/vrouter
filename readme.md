@@ -46,7 +46,7 @@ $router = new Router("https://www.youdomain.com");
  * The controller must be in the namespace Test\Controller
  * this produces routes for route, route/$id, route/{$id}/profile, etc.
  */
-$router->namespace("Test");
+$router->SetNamespace("Test");
 
 $router->get("/route", "Controller:method");
 $router->post("/route/{id}", "Controller:method");
@@ -56,6 +56,8 @@ $router->delete("/route/{id}", "Controller:method");
 
 // CRUD - [index, create, store, edit, update, destroy]
 $router->resource("/usuarios", "UsuarioController", 'usuarios');
+
+$router->any(['GET','POST']", /usuarios", "UsuarioController", 'usuarios');
 
 /**
  * group by routes and namespace
