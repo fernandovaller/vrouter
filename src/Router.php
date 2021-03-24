@@ -74,6 +74,7 @@ class Router extends Dispatch
     public function resource($route, $handler, $name = null)
     {
         $this->addRoute("GET", $route, "{$handler}:index", "{$name}.index");
+        $this->addRoute("POST", $route, "{$handler}:index", "{$name}.index");
 
         $this->addRoute("GET", "{$route}/create", "{$handler}:create", "{$name}.create");
         $this->addRoute("POST", "{$route}/store", "{$handler}:store", "{$name}.store");
@@ -82,6 +83,9 @@ class Router extends Dispatch
         $this->addRoute("POST", "{$route}/update", "{$handler}:update", "{$name}.update");
 
         $this->addRoute("GET", "{$route}/{id}/destroy", "{$handler}:destroy", "{$name}.destroy");
+
+        $this->addRoute("GET", "{$route}/export", "{$handler}:export", "{$name}.export");
+        $this->addRoute("POST", "{$route}/export", "{$handler}:export", "{$name}.export");
     }
 
     /**
