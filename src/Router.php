@@ -76,7 +76,8 @@ class Router extends Dispatch
         $this->addRoute("GET", $route, "{$handler}:index", "{$name}.index");
         $this->addRoute("POST", $route, "{$handler}:index", "{$name}.index");
 
-        $this->addRoute("GET", $route, "{$handler}:show", "{$name}.show");
+        $this->addRoute("GET", "{$route}/show", "{$handler}:show", "{$name}.show");
+        $this->addRoute("GET", "{$route}/modal", "{$handler}:modal", "{$name}.modal");
 
         $this->addRoute("GET", "{$route}/create", "{$handler}:create", "{$name}.create");
         $this->addRoute("POST", "{$route}/store", "{$handler}:store", "{$name}.store");
