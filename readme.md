@@ -54,7 +54,7 @@ $router->put("/route/{id}/profile", "Controller:method");
 $router->patch("/route/{id}/profile/{photo}", "Controller:method");
 $router->delete("/route/{id}", "Controller:method");
 
-// CRUD - [index, create, store, edit, update, destroy]
+// CRUD - [index, show, modal, create, store, edit, update, destroy]
 $router->resource("/usuarios", "UsuarioController", 'usuarios');
 
 $router->any(['GET','POST']", /usuarios", "UsuarioController", 'usuarios');
